@@ -5,6 +5,12 @@ class Unfs3 < Formula
   version "0.10.0-9ed6a63"
   head "https://github.com/unfs3/unfs3.git"
 
+  bottle do
+    root_url "https://github.com/kanya-approve/homebrew-extras/releases/download/unfs3-0.10.0-9ed6a63"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6223aa41929597ad967cd624e41d574824734e75c5b4053722f721b1a1a2aba"
+  end
+
   depends_on "autoconf"
   depends_on "automake"
   depends_on "bison"
