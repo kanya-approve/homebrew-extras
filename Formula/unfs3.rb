@@ -24,6 +24,6 @@ class Unfs3 < Formula
   end
 
   test do
-    system "#{bin}/unfsd", "-h"
+    system "#{sbin}/unfsd", "-h"
   end
 end
