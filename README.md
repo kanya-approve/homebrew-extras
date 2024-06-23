@@ -1,4 +1,4 @@
-# Kanya-approve Extras
+# My Homebrew Extras
 
 ## How do I install these formulae?
 
