@@ -20,6 +20,6 @@ class Unfs3 < Formula
   end
 
   test do
-    system "#{bin}/unfsd", "--version"
+    system "#{bin}/unfsd", "-h"
   end
 end
