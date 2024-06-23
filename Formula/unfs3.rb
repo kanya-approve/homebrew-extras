@@ -5,6 +5,8 @@ class Unfs3 < Formula
   version "0.10.0-9ed6a63"
   head "https://github.com/unfs3/unfs3.git"
 
+  depends_on "autoconf"
+  depends_on "automake"
   depends_on "bison"
   depends_on "flex"
   depends_on "gcc"
