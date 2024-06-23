@@ -10,9 +10,13 @@ class Unfs3 < Formula
   depends_on "bison"
   depends_on "flex"
   depends_on "gcc"
+  depends_on "glibc"
   depends_on "libtirpc"
+  depends_on "pkg-config"
 
   def install
+    ENV.deparallelize # Build is not parallel-safe
+
     system "./bootstrap"
     system "./configure", "--disable-debug", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make"
